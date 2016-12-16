@@ -120,6 +120,7 @@ class Connector extends Client
     protected function doRequest($request)
     {
         $response = new Response();
+        $request->params['return'] = true;
 
         $dispatcher = DispatcherFactory::create();
         $dispatcher->eventManager()->on(
