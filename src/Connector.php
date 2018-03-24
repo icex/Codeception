@@ -114,7 +114,7 @@ class Connector extends Client
 
         $response->sendHeaders();
         return new BrowserKitResponse(
-            $response->body(),
+            $response->body() ? $response->body() : '',
             $response->statusCode(),
             $response->header()
         );
