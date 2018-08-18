@@ -74,7 +74,7 @@ class Framework extends \Codeception\Lib\Framework
      */
     public function expectedCakePHPVersion($ver, $operator = 'ge')
     {
-        $this->assertTrue(version_compare($ver, Configure::version(), $operator));
+        $this->assertTrue(version_compare(Configure::version(), $ver, $operator));
     }
 
     /**

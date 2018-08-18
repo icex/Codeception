@@ -1,7 +1,7 @@
-CakePHP 3 Codeception Module (nojimage's fork)
+CakePHP 3 Codeception Module
 ============================
 
-[![Build Status](https://api.travis-ci.org/nojimage/cakephp-codeception.png)](https://travis-ci.org/nojimage/cakephp-codeception)
+[![Build Status](https://api.travis-ci.org/cakephp/codeception.png)](https://travis-ci.org/cakephp/codeception)
 [![License](https://poser.pugx.org/cakephp/codeception/license.svg)](https://packagist.org/packages/cakephp/codeception)
 
 A [codeception](http://codeception.com) module to test your CakePHP 3 powered application. Using Codeception with CakePHP opens up a whole new set of testing capabilities.
@@ -30,8 +30,7 @@ Usage
 From a CakePHP application, run the following from the command-line:
 
 ```console
-$ composer config repositories.cakephp/codeception https://github.com/nojimage/cakephp-codeception.git
-$ composer require --dev cakephp/codeception:dev-updates
+$ composer require --dev cakephp/codeception:dev-master && composer run-script post-install-cmd
 ```
 
 If you are developing a plugin, add the post-install script to your `composer.json` first:

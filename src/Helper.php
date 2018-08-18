@@ -26,6 +26,7 @@ class Helper extends Framework
         parent::_before($test);
         $this->client = $this->getConnectorInstance();
         $this->reloadRoutes();
+        $this->client->loadRoutes();
     }
 
     /**
